@@ -57,8 +57,8 @@ class ExcelServiceProvider extends ServiceProvider
         $this->app->alias('excel', Exporter::class);
         $this->app->alias('excel', Importer::class);
 
-        Collection::mixin(new DownloadCollection);
-        Collection::mixin(new StoreCollection);
+//        Collection::mixin(new DownloadCollection);
+//        Collection::mixin(new StoreCollection);
 
         $this->commands([
             ExportMakeCommand::class,
